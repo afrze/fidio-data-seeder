@@ -1,0 +1,32 @@
+{
+  "name": "fidio-data-seed",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "data seeder to a mongodb database using mongoose",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "exec": "ts-node src/index.ts",
+    "data:import": "ts-node src/seeder",
+    "data:destroy": "ts-node src/seeder -d"
+  },
+  "keywords": [
+    "data-seeder",
+    "mongoose",
+    "mongodb",
+    "typescript"
+  ],
+  "author": "zubae",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
